@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="North Reno AI Marketing Engine - Dominate your local market with 24/7 AI chatbots that capture and convert leads without paying for ads.">
+    <meta name="keywords" content="AI Marketing, Local Business Growth, North Reno, Chatbot, Lead Generation">
+    <meta name="author" content="North Reno AI Marketing">
+    <meta property="og:title" content="North Reno AI Marketing Engine For Local Business Growth">
+    <meta property="og:description" content="Dominate North Reno With AI Power. 24/7 AI Chatbot Captures And Converts Leads">
+    <meta property="og:type" content="website">
+    <title>North Reno AI Marketing Engine | Local Business Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        
+        .primary-gradient {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7B68FF 100%);
+        }
+        
+        .accent-mint {
+            color: #00E5A8;
+        }
+        
+        .accent-mint-bg {
+            background-color: #00E5A8;
+        }
+        
+        .soft-lavender-bg {
+            background-color: #EEF0FF;
+        }
+        
+        .soft-lavender-text {
+            color: #EEF0FF;
+        }
+        
+        .card-hover {
+            transition: all 300ms ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.2);
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(91, 75, 255, 0.3);
+            filter: brightness(1.1);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            border: 2px solid #5B4BFF;
+            border-radius: 9999px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .hero-text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #EEF0FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .feature-card {
+            background-color: #1a1a1a;
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid #333333;
+            transition: all 300ms ease-out;
+        }
+        
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+            border-color: #5B4BFF;
+        }
+        
+        .testimonial-card {
+            background-color: #1a1a1a;
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid #333333;
+            transition: all 300ms ease-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(91, 75, 255, 0.15);
+            border-color: #5B4BFF;
+        }
+        
+        .faq-item {
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 300ms ease-out;
+            margin-bottom: 16px;
+        }
+        
+        .faq-question {
+            padding: 24px 32px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 300ms ease-out;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            background-color: #252525;
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            padding: 0 32px 24px 32px;
+            color: #cccccc;
+            line-height: 1.6;
+            max-height: 500px;
+            overflow: hidden;
+            animation: slideDown 300ms ease-out;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+            animation: slideUp 300ms ease-out;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        
+        .section-subtitle {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            font-weight: 500;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #333333;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .nav-link {
+            color: #cccccc;
+            transition: all 300ms ease-out;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: #5B4BFF;
+        }
+        
+        .cta-section {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        .cta-overlay {
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.85) 0%, rgba(91, 75, 255, 0.1) 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white">
+    <!-- Header -->
+    <header class="header-sticky">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 primary-gradient rounded-full flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight">NorthReno<span class="accent-mint">AI</span></span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-12">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="btn-primary">Schedule Demo</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-2xl text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-900 border-t border-gray-800">
+            <div class="px-8 py-6 flex flex-col gap-6">
+                <a href="#features" class="nav-link text-lg">Features</a>
+                <a href="#benefits" class="nav-link text-lg">Benefits</a>
+                <a href="#testimonials" class="nav-link text-lg">Testimonials</a>
+                <a href="#faq" class="nav-link text-lg">FAQ</a>
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="btn-primary text-center">Schedule Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-32 md:py-40 overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-0 left-1/4 w-96 h-96 primary-gradient rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h1 class="section-title hero-text-gradient">
+                            North Reno AI Marketing Engine For Local Business Growth
+                        </h1>
+                        <p class="text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-gray-400">
+                            Dominate North Reno With AI Power.
+                        </p>
+                    </div>
+                    
+                    <p class="section-subtitle text-lg leading-relaxed max-w-lg">
+                        Transform your local business with intelligent AI technology that works 24/7. Our advanced AI marketing engine captures qualified leads automatically, converts them into customers, and scales your business without the burden of expensive advertising costs.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 pt-4">
+                        <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="btn-primary text-center text-lg">
+                            <i class="fas fa-calendar-check mr-2"></i>Schedule Your Free Demo
+                        </a>
+                        <button class="btn-secondary text-center text-lg">
+                            <i class="fas fa-play mr-2"></i>Watch Demo Video
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative hidden lg:flex items-center justify-center">
+                    <div class="w-full h-96 primary-gradient rounded-3xl opacity-20 absolute"></div>
+                    <div class="relative z-10 w-full max-w-sm">
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 shadow-2xl">
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 accent-mint-bg rounded-full flex items-center justify-center">
+                                        <i class="fas fa-robot text-black"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-400">AI Assistant</p>
+                                        <p class="font-bold">Always Online</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="bg-gray-700 rounded-lg p-3 text-sm">
+                                        <p class="text-gray-300">How can I help you today?</p>
+                                    </div>
+                                    <div class="bg-blue-600 rounded-lg p-3 text-sm text-white text-right">
+                                        <p>I'd like to schedule a consultation</p>
+                                    </div>
+                                    <div class="bg-gray-700 rounded-lg p-3 text-sm">
+                                        <p class="text-gray-300">Perfect! Let me check our availability...</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between pt-4 border-t border-gray-700">
+                                    <span class="text-xs text-gray-400">Powered by AI</span>
+                                    <span class="inline-flex items-center gap-1 text-green-400 text-xs font-semibold">
+                                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                                        Active
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gradient-to-b from-gray-900 to-gray-950">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center space-y-6 mb-20">
+                <h2 class="section-title">Powerful AI Features Built For Your Success</h2>
+                <p class="section-subtitle max-w-3xl mx-auto">
+                    Our intelligent AI marketing engine is designed specifically for local North Reno businesses. Every feature works together to capture, engage, and convert your ideal customers automatically.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 primary-gradient rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">24/7 AI Chatbot</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Your intelligent assistant never sleeps. Our advanced AI chatbot engages visitors instantly, answers questions, qualifies leads, and captures contact information automatically—even at 3 AM when your competitors are offline.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Instant response to customer inquiries</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Natural, human-like conversations</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Seamless handoff to your team</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 primary-gradient rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Intelligent Lead Capture</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Convert curious browsers into qualified leads automatically. Our AI analyzes visitor behavior, engagement patterns, and interest signals to identify high-value prospects and capture their information at the perfect moment.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Smart qualification scoring</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Real-time lead notifications</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Automatic CRM integration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 primary-gradient rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Advanced Analytics</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Understand every interaction. Our comprehensive dashboard provides deep insights into customer behavior, conversion funnels, and performance metrics. Make data-driven decisions to continuously improve your results.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Real-time performance tracking</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Detailed conversion insights</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Custom reporting tools</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 primary-gradient rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Customizable Workflows</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Tailor the AI to match your unique business processes. Create custom conversation flows, set intelligent routing rules, and automate follow-ups based on customer behavior and preferences.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>No-code workflow builder</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Intelligent routing rules</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Automated follow-up sequences</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 primary-gradient rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.658 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Seamless Integrations</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Connect with your existing tools instantly. Our AI works seamlessly with popular CRM platforms, email services, calendars, and business applications to create a unified customer experience.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>100+ pre-built integrations</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Custom API access</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Webhook support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="w-14 h-14 primary-gradient rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Enterprise Security</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Your data is protected with military-grade encryption and compliance standards. We maintain strict security protocols and regular audits to ensure your customer information stays safe and secure.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>256-bit encryption</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>GDPR & CCPA compliant</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            <span>Regular security audits</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center space-y-6 mb-20">
+                <h2 class="section-title">Transform Your Business With Proven Results</h2>
+                <p class="section-subtitle max-w-3xl mx-auto">
+                    Local North Reno businesses are already experiencing dramatic growth. Here's what you can expect when you harness the power of our AI marketing engine.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Benefit 1 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Daily Leads Without Paying For Ads</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            Stop wasting money on expensive paid advertising that drains your budget. Our AI marketing engine generates qualified leads organically through intelligent engagement and conversion optimization. Get consistent, predictable lead flow without the ad spend overhead.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Zero ad spend required</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Consistent lead generation</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Higher quality prospects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Instant Response & Engagement</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            Never miss a potential customer again. Our AI responds instantly to every inquiry, 24/7. Customers expect immediate responses, and our intelligent chatbot delivers exactly that—building trust and dramatically improving conversion rates.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Sub-second response times</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Increased customer satisfaction</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Higher conversion rates</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Automate Your Entire Sales Process</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            Free up your team to focus on closing deals instead of manual lead handling. Our AI automates lead qualification, scheduling, follow-ups, and nurturing—dramatically reducing your operational costs while improving efficiency.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Automated qualification</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Smart scheduling</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Reduced operational overhead</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex gap-8 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 primary-gradient rounded-2xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold mb-4">Measurable ROI & Growth</h3>
+                        <p class="text-gray-400 leading-relaxed mb-4">
+                            Track every metric that matters. See exactly how many leads you're generating, conversion rates, customer acquisition costs, and revenue impact. Our transparent analytics help you understand your return on investment and optimize for maximum growth.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Real-time performance dashboards</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Detailed ROI calculations</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-green-500/20 text-green-400 flex-shrink-0">
+                                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>Predictable business growth</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="cta-section py-20 md:py-32" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="cta-overlay py-20 md:py-32">
+            <div class="max-w-4xl mx-auto px-8 md:px-16 text-center space-y-8">
+                <h2 class="section-title text-white">Ready To Dominate North Reno?</h2>
+                <p class="section-subtitle text-lg text-gray-200 max-w-2xl mx-auto">
+                    Join local businesses that are already generating consistent leads and closing more deals with our AI marketing engine. Start your free 30-minute consultation today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+                    <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="btn-primary text-lg">
+                        <i class="fas fa-calendar-check mr-2"></i>Schedule Free Consultation
+                    </a>
+                    <button class="btn-secondary text-lg">
+                        <i class="fas fa-envelope mr-2"></i>Send Me More Info
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-gradient-to-b from-gray-950 to-gray-900">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center space-y-6 mb-20">
+                <h2 class="section-title">Loved By North Reno Business Owners</h2>
+                <p class="section-subtitle max-w-3xl mx-auto">
+                    See what local entrepreneurs are saying about how our AI marketing engine transformed their business growth and lead generation.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "The AI chatbot has been a game-changer for our dental practice. We're now capturing leads 24/7 that we would have completely missed before. Our appointment bookings increased by 40% in the first month!"
+                    </p>
+                    <div class="border-t border-gray-700 pt-4">
+                        <p class="font-semibold text-white">Dr. Sarah Mitchell</p>
+                        <p class="text-sm text-gray-400">Owner, Smile Dental Studio</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "I was skeptical at first, but the results speak for themselves. Not only am I getting more leads, but they're higher quality prospects who are actually ready to buy. My sales team loves not having to chase cold leads anymore."
+                    </p>
+                    <div class="border-t border-gray-700 pt-4">
+                        <p class="font-semibold text-white">Marcus Johnson</p>
+                        <p class="text-sm text-gray-400">CEO, Johnson Home Services</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "Best investment we've made for our law firm. The AI handles initial consultations perfectly, qualifying clients before they even reach our attorneys. We've cut down on time wasted on unqualified leads significantly."
+                    </p>
+                    <div class="border-t border-gray-700 pt-4">
+                        <p class="font-semibold text-white">Rebecca Torres</p>
+                        <p class="text-sm text-gray-400">Managing Partner, Torres Legal Group</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                        <i class="fas fa-star star-rating text-lg"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        "We stopped running Google Ads after implementing this system. The leads coming through the AI chatbot convert at a much higher rate and cost us significantly less. I'm amazed we didn't do this sooner!"
+                    </p>
+                    <div class="border-t border-gray-700 pt-4">
+                        <p class="font-semibold text-white">David Chen</p>
+                        <p class="text-sm text-gray-400">Founder, Chen Digital Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="space-y-8">
+                <div>
+                    <h2 class="section-title mb-8">About North Reno AI</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        North Reno AI was founded in 2023 by a team of AI engineers, marketing strategists, and local business experts who recognized a critical gap in the market. While large corporations had access to sophisticated AI-powered sales tools, local North Reno businesses were left behind, struggling with expensive advertising and manual lead handling. We built our AI marketing engine specifically for local entrepreneurs who want to compete with bigger players without the massive budgets. Our platform combines cutting-edge artificial intelligence with deep understanding of local business dynamics to deliver results that matter.
+                    </p>
+                </div>
+                
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Our mission is simple: empower every North Reno business with intelligent technology that captures more leads, converts them faster, and eliminates wasted ad spend. We believe that great businesses deserve great tools, and we're committed to continuous innovation that keeps our clients ahead of the competition. We measure our success by your success—when your business grows, we grow. That's why we're so passionate about delivering exceptional results and providing world-class support to every client we work with.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-gradient-to-b from-gray-900 to-gray-950">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="text-center space-y-6 mb-20">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle max-w-2xl mx-auto">
+                    Have questions about how our AI marketing engine works? We've compiled answers to the most common questions from North Reno business owners.
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-semibold">How quickly will I start seeing results?</h3>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Most of our clients see their first qualified leads within 48 hours of going live. However, the real magic happens over the first 2-4 weeks as the AI learns about your business, your customers, and optimizes its approach. By week 4, most clients report a 3-5x increase in qualified lead volume compared to their previous methods. The exact timeline depends on your current traffic volume and conversion baseline, but we've found that patience combined with our optimization typically yields remarkable results within the first month.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-semibold">Will the AI chatbot actually handle customer service, or just collect leads?</h3>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>Our AI is incredibly versatile. It can handle both lead generation and customer service simultaneously. Many of our clients use it to answer common questions, schedule appointments, process refunds, handle complaints, and much more. The AI can be customized to handle whatever tasks make sense for your business. Some clients use it primarily for lead capture, while others use it for comprehensive customer support. You have complete control over what conversations the AI handles and when it escalates to your human team. This flexibility is one of the biggest advantages of our platform.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-semibold">What if the AI gives wrong information to a customer?</h3>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>This is a great question and something we take very seriously. Our AI is trained on your specific business information, FAQs, and knowledge base, so it has accurate information to reference. We also build in multiple safeguards: the AI can be configured to escalate complex questions to humans, it provides sources for its answers, and it's designed to say "I don't know" rather than make up information. Additionally, all conversations are logged and reviewed, so you can monitor quality and make corrections. We also recommend regularly updating your knowledge base as your business evolves. Most clients find that the AI is more consistent and accurate than their human team after the initial training period.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-semibold">How much does this cost compared to hiring a customer service team?</h3>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>The cost comparison is dramatic. A single full-time customer service representative costs $30,000-$50,000+ per year in salary, benefits, and overhead. Our platform costs a fraction of that and can handle the work of 3-5 employees. Most small to mid-size businesses see ROI within the first 3-6 months. Plus, you get consistency, 24/7 availability, and the ability to scale instantly without hiring and training new staff. When you factor in reduced customer churn from faster response times and improved lead quality, the financial case for AI becomes overwhelming. We're happy to run a custom ROI analysis for your specific business during your free consultation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 class="text-lg font-semibold">What happens if your service goes down? Will I lose leads?</h3>
+                        <svg class="faq-icon w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden">
+                        <p>We maintain 99.9% uptime with redundant servers across multiple data centers. In the unlikely event of service disruption, we have automatic failover systems to keep your AI running. Additionally, all lead data is backed up in real-time to secure cloud storage, so you'll never lose customer information. We also provide fallback email capture forms that activate if there's any issue with the chatbot, ensuring you never miss a lead. Our infrastructure is enterprise-grade, and we invest heavily in reliability because we understand that your business depends on our service. We also include 24/7 technical support to address any issues immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 primary-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">NorthReno<span class="accent-mint">AI</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Empowering North Reno businesses with intelligent AI technology for sustainable growth.
+                    </p>
+                </div>
+
+                <!-- Product Column -->
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-white">Product</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition-colors">Benefits</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="hover:text-white transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-white">Company</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+                        <li><a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-white">Get In Touch</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>
+                            <a href="mailto:dandowneyseo@gmail.com" class="hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fas fa-envelope w-4"></i>
+                                dandowneyseo@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://calendly.com/dandowneyseo/30min" target="_blank" class="hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fas fa-calendar w-4"></i>
+                                Schedule Demo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2025 North Reno AI. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
